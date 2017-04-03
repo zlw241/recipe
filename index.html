@@ -1,35 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Zach Ward Recipe</title>
-  </head>
+<head>
+  <title>Zach Ward Margarita Recipe</title>
+  <meta name="description" content="The best, simple recipe for delicious Margarita, a tasty mexican drink best served on the beach.">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css_custom_reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./advanced_selectors.css" type="text/css"/>
+  <script src="./external_javascript_example.js" type="text/javascript"></script>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-12345678-9', 'auto');
+      ga('send', 'pageview');
+  </script>
+</head>
   <body>
-    <a name="top-of-page" />
-    <h2>Margarita</h2>
-    <ul>
-      <li><a href="#description">Description</a></li>
-      <li><a href="#ingredients">Ingredients</a></li>
-      <li><a href="#preparation">Preparation</a></li>
-    </ul>
+    <header>
+      <a name="top-of-page" />
+      <h2>Margarita</h2>
+      <img src="https://d3c5s1hmka2e2b.cloudfront.net/uploads/topic/image/4/appacademy.png" alt="App Academy Logo">
+      <nav>
+        <ul>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#preparation">Preparation</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <a name="description" />
-    <h2>Description</h2>
-    <p>A margarita is a cocktail consisting of triple sec, tequila and lime or lemon juice, often served with salt or sugar on the rim of the glass. The drink is served shaken with ice (on the rocks), blended with ice (frozen margarita), or without ice (straight up). Although it has become acceptable to serve a margarita in a wide variety of glass types, ranging from cocktail and wine glasses to pint glasses and even large schooners, the drink is traditionally served in the eponymous margarita glass, a stepped-diameter variant of a cocktail glass or champagne coupe. <a href="https://en.wikipedia.org/wiki/Margarita" target="_blank">Wikipedia</a></p>
+    <aside>
+      <h2 id="ingredients">Ingredients</h2>
+      <ul>
+        <li>3.5 cL (7 parts) tequila</li>
+        <li>2 cL (4 parts) Triple Sec</li>
+        <li>1.5 cL (3 parts) lime juice</li>
+      </ul>
+    </aside>
 
-    <img style="width: 400px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/MargaritaReal.jpg/800px-MargaritaReal.jpg" />
+    <figure>
+      <img style="width: 400px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/MargaritaReal.jpg/800px-MargaritaReal.jpg" />
+      <figcaption>
+        <a href="https://en.wikipedia.org/wiki/Margarita" target="_blank">The history of Margaritas</a>
+      </figcaption>
+    </figure>
 
-    <a name="ingredients" />
-    <h2>Ingredients</h2>
-    <ul>
-      <li>3.5 cL (7 parts) tequila</li>
-      <li>2 cL (4 parts) Triple Sec</li>
-      <li>1.5 cL (3 parts) lime juice</li>
-    </ul>
+    <section>
+      <h2 id="description">Description</h2>
+      <p>
+        A margarita is a cocktail consisting of triple sec, tequila and lime or lemon juice, often served with salt or sugar on the rim of the glass. The drink is served shaken with ice (on the rocks), blended with ice (frozen margarita), or without ice (straight up). Although it has become acceptable to serve a margarita in a wide variety of glass types, ranging from cocktail and wine glasses to pint glasses and even large schooners, the drink is traditionally served in the eponymous margarita glass, a stepped-diameter variant of a cocktail glass or champagne coupe.
+      </p>
 
-    <a name="preparation" />
-    <h2>Preparation</h2>
-    <p>Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.</p>
+      <h2 id="directions">Directions</h2>
+      <ol>
+        <li>
+          Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail.
+        </li>
+        <li>
+          Shake the other ingredients with ice.
+        </li>
+        <li>
+          Carefully pour into the glass.
+        </li>
+      </ol>
+    </section>
+
+    <section id="reviews">
+      <h2>Reviews</h2>
+        <form id="review-form" action="/reviews" method="post">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name">
+
+          <label for="rating">Rating</label>
+          1<input type="radio" name="rating" value="1" checked>
+          2<input type="radio" name="rating" value="2">
+          3<input type="radio" name="rating" value="3">
+          4<input type="radio" name="rating" value="4">
+          5<input type="radio" name="rating" value="5">
+
+          <label for="expertise">Drinking Expertise</label>
+
+          <select id="expertise" name="expertise">
+            <option value="Select Drinking Expertise" disabled="true" selected="true">Select Drinking Expertise</option>
+            <option value="Sometimes Drink">Sometimes Drink</option>
+            <option value="Drink Everyday">Drink Everyday</option>
+            <option value="Drinking is a Hobby">Drinking is a Hobby</option>
+            <option value="Professional Drinker">Professional Drinker</option>
+          </select>
+
+          <label>Review
+            <textarea id="review" name="review" cols="30" rows="10"></textarea>
+          </label>
+
+          <input type="submit" value="Submit Review">
+        </form>
+    </section>
+
+    <footer>
+      <p>Original Recipe by <a href="http://iba-world.com/cocktails/margarita/">iba-world.com</a></p>
+    </footer>
     <a href="#top-of-page">Back to top</a>
 
     <!-- Source for recipe: https://en.wikipedia.org/wiki/Margarita -->
