@@ -31,11 +31,11 @@ header > img {
 .ingredients-list {
 
   /* The list style property is shorthand for multiple list-style properties*/
-  list-style: square inside;
+  list-style: "square inside";
 }
 
-ol {
-  list-style: upper-roman inside;
+.directions-list {
+  list-style: "upper-roman inside";
 }
 
 .user_review h4 {
