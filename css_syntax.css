@@ -31,7 +31,7 @@ header > img {
 .ingredients-list {
 
   /* The list style property is shorthand for multiple list-style properties*/
-  list-style-type: square inside;
+  list-style: square inside;
 }
 
 .directions-list {
