@@ -40,6 +40,8 @@ var createReview = function(event) {
 };
 
 var getName = function(event) {
+  console.log(event);
+  console.log(event.target.children);
   return event.target.children.name.value;
 };
 

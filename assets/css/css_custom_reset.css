@@ -14,14 +14,11 @@ html, body, section, aside, header, article, h1, h2, p {
 
 body {
   padding: 20px;
-  border: 10px solid red;
-
   font-family: sans-serif;
   font-weight: bold;
-  color: red;
+  color: #444;
 }
 
 article {
   color: blue;
-  font-family: serif;
 }
